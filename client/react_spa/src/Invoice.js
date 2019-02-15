@@ -84,6 +84,7 @@ class Popup extends React.Component {
     // submit the data...
     // calling the post api
     createInvoicePost(this.state);
+    this.state.callback();
     closePop();
   }
 
