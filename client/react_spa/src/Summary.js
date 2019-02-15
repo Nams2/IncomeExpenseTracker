@@ -111,6 +111,7 @@ class Summary extends Component {
                       <div class="rTableHead">Description : {item.transactionDesc}</div>
                       <div class="rTableHead">Amount : {item.transactionAmount}</div>
                     </div>
+                    <br />
                   </div>
               ))}
             </div>
