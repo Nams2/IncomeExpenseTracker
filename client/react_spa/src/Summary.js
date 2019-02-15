@@ -103,13 +103,13 @@ class Summary extends Component {
 
             <div><h2>Transaction Summary</h2><br />
               {transactionsItems.map(item => (
-                  <div class="rTable" key={item.transactionId}>
-                    <div class="rTableRow">
-                      <div class="rTableHead">Transaction ID : {item.transactionId}</div>
-                      <div class="rTableHead">Transaction unique No. : {item.transactionUniqueNo}</div>
-                      <div class="rTableHead">Transaction Date : {item.transactionDate}</div>
-                      <div class="rTableHead">Description : {item.transactionDesc}</div>
-                      <div class="rTableHead">Amount : {item.transactionAmount}</div>
+                  <div className="rTable" key={item.transactionId}>
+                    <div className="rTableRow">
+                      <div className="rTableHead">Transaction ID : {item.transactionId}</div>
+                      <div className="rTableHead">Transaction unique No. : {item.transactionUniqueNo}</div>
+                      <div className="rTableHead">Transaction Date : {item.transactionDate}</div>
+                      <div className="rTableHead">Description : {item.transactionDesc}</div>
+                      <div className="rTableHead">Amount : {item.transactionAmount}</div>
                     </div>
                     <br />
                   </div>
@@ -120,15 +120,15 @@ class Summary extends Component {
 
             <div><h2>Invoice Summary</h2><br />
               {invoiceItems.map(item => (
-                <div class="rTable" key={item.invoiceId}>
-                  <div class="rTableRow">
-                    <div class="rTableHead">Invoice ID : {item.invoiceId}</div>
-                    <div class="rTableHead">Client name : {item.invoiceClientName}</div>
-                    <div class="rTableHead">Creation Date : {item.invoiceCreationDate}</div>
-                    <div class="rTableHead">Invoice Unique ID : {item.invoiceUniqueNo}</div>
-                    <div class="rTableHead">Invoice Creation Date : {item.invoiceCreationDate}</div>
-                    <div class="rTableHead">Amount : {item.invoiceAmount}</div>
-                    <div class="rTableHead">Status : {item.invoiceStatus}</div>
+                <div className="rTable" key={item.invoiceId}>
+                  <div className="rTableRow">
+                    <div className="rTableHead">Invoice ID : {item.invoiceId}</div>
+                    <div className="rTableHead">Client name : {item.invoiceClientName}</div>
+                    <div className="rTableHead">Creation Date : {item.invoiceCreationDate}</div>
+                    <div className="rTableHead">Invoice Unique ID : {item.invoiceUniqueNo}</div>
+                    <div className="rTableHead">Invoice Creation Date : {item.invoiceCreationDate}</div>
+                    <div className="rTableHead">Amount : {item.invoiceAmount}</div>
+                    <div className="rTableHead">Status : {item.invoiceStatus}</div>
                     <br />
                   </div>
                 </div>

@@ -50,6 +50,7 @@ class Popup extends React.Component {
   constructor() {
     super();
     this.state = {
+      userId: "",
       invoiceClientName: "",
       invoiceUniqueNo: "",
       invoiceCreationDate: "",
@@ -204,22 +205,22 @@ class Invoice extends React.Component {
       return (
         <div>
             <center>
-                <button class="button button2" type="button" onClick={this.togglePopup.bind(this)}>Create New Invoice</button>
+                <button className="button button2" type="button" onClick={this.togglePopup.bind(this)}>Create New Invoice</button>
             </center>
 
             {this.state.showPopup ? <Popup text='Create New Invoice' closePopup={this.togglePopup.bind(this)}/>: null}
 
             <div><h2>Invoice Details</h2><br />
                 {items.map(item => (
-                    <div class="rTable" key={item.invoiceId}>
-                        <div class="rTableRow">
-                            <div class="rTableHead">Invoice ID : {item.invoiceId}</div>
-                            <div class="rTableHead">Client name : {item.invoiceClientName}</div>
-                            <div class="rTableHead">Creation Date : {item.invoiceCreationDate}</div>
-                            <div class="rTableHead">Invoice Unique ID : {item.invoiceUniqueNo}</div>
-                            <div class="rTableHead">Invoice Creation Date : {item.invoiceCreationDate}</div>
-                            <div class="rTableHead">Amount : {item.invoiceAmount}</div>
-                            <div class="rTableHead">Status : {item.invoiceStatus}</div>
+                    <div className="rTable" key={item.invoiceId}>
+                        <div className="rTableRow">
+                            <div className="rTableHead">Invoice ID : {item.invoiceId}</div>
+                            <div className="rTableHead">Client name : {item.invoiceClientName}</div>
+                            <div className="rTableHead">Creation Date : {item.invoiceCreationDate}</div>
+                            <div className="rTableHead">Invoice Unique ID : {item.invoiceUniqueNo}</div>
+                            <div className="rTableHead">Invoice Creation Date : {item.invoiceCreationDate}</div>
+                            <div className="rTableHead">Amount : {item.invoiceAmount}</div>
+                            <div className="rTableHead">Status : {item.invoiceStatus}</div>
                             <br />
                         </div>
                     </div>

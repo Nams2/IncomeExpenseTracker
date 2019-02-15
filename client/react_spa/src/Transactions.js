@@ -43,13 +43,13 @@ class Transactions extends React.Component {
         <div>
           <div><h2>Transaction Details</h2><br />
             {items.map(item => (
-                <div class="rTable" key={item.transactionId}>
-                  <div class="rTableRow">
-                    <div class="rTableHead">Transaction ID : {item.transactionId}</div>
-                    <div class="rTableHead">Transaction unique No. : {item.transactionUniqueNo}</div>
-                    <div class="rTableHead">Transaction Date : {item.transactionDate}</div>
-                    <div class="rTableHead">Description : {item.transactionDesc}</div>
-                    <div class="rTableHead">Amount : {item.transactionAmount}</div>
+                <div className="rTable" key={item.transactionId}>
+                  <div className="rTableRow">
+                    <div className="rTableHead">Transaction ID : {item.transactionId}</div>
+                    <div className="rTableHead">Transaction unique No. : {item.transactionUniqueNo}</div>
+                    <div className="rTableHead">Transaction Date : {item.transactionDate}</div>
+                    <div className="rTableHead">Description : {item.transactionDesc}</div>
+                    <div className="rTableHead">Amount : {item.transactionAmount}</div>
                   </div>
                   <br />
                 </div>
